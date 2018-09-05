@@ -1362,11 +1362,11 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("week-end",
         Classifier{okData =
-                     ClassData{prior = 0.0, unseen = -1.3862943611198906,
-                               likelihoods = HashMap.fromList [("", 0.0)], n = 2},
-                   koData =
                      ClassData{prior = -infinity, unseen = -0.6931471805599453,
-                               likelihoods = HashMap.fromList [], n = 0}}),
+                               likelihoods = HashMap.fromList [], n = 0},
+                   koData =
+                     ClassData{prior = 0.0, unseen = -1.3862943611198906,
+                               likelihoods = HashMap.fromList [("", 0.0)], n = 2}}),
        ("hora (grain)",
         Classifier{okData =
                      ClassData{prior = -0.40546510810816444,
@@ -1449,16 +1449,21 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("this <time>",
         Classifier{okData =
-                     ClassData{prior = 0.0, unseen = -3.5263605246161616,
+                     ClassData{prior = -0.1670540846631662,
+                               unseen = -3.4011973816621555,
                                likelihoods =
                                  HashMap.fromList
-                                   [("season", -2.1102132003465894),
-                                    ("Segunda-feira", -2.1102132003465894),
-                                    ("dia <day-of-month> (non ordinal)", -2.1102132003465894),
-                                    ("day", -1.1939224684724346), ("hour", -1.8870696490323797),
-                                    ("evening", -2.3978952727983707),
-                                    ("week-end", -2.3978952727983707)],
-                               n = 13},
+                                   [("season", -1.9810014688665833),
+                                    ("Segunda-feira", -1.9810014688665833),
+                                    ("dia <day-of-month> (non ordinal)", -1.9810014688665833),
+                                    ("day", -1.0647107369924282), ("hour", -2.268683541318364),
+                                    ("evening", -2.268683541318364)],
+                               n = 11},
                    koData =
-                     ClassData{prior = -infinity, unseen = -2.0794415416798357,
-                               likelihoods = HashMap.fromList [], n = 0}})]
+                     ClassData{prior = -1.8718021769015913,
+                               unseen = -2.4849066497880004,
+                               likelihoods =
+                                 HashMap.fromList
+                                   [("day", -1.2992829841302609),
+                                    ("week-end", -1.2992829841302609)],
+                               n = 2}})]

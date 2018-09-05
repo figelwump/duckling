@@ -1321,17 +1321,21 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("next <time>",
         Classifier{okData =
-                     ClassData{prior = 0.0, unseen = -2.639057329615259,
+                     ClassData{prior = -0.2876820724517809,
+                               unseen = -2.3978952727983707,
                                likelihoods =
                                  HashMap.fromList
-                                   [("wednesday", -1.8718021769015913),
-                                    ("monday", -1.466337068793427), ("day", -1.1786549963416462),
-                                    ("hour", -1.8718021769015913),
-                                    ("week-end", -1.8718021769015913)],
-                               n = 4},
+                                   [("wednesday", -1.6094379124341003),
+                                    ("monday", -1.2039728043259361), ("day", -0.916290731874155)],
+                               n = 3},
                    koData =
-                     ClassData{prior = -infinity, unseen = -1.791759469228055,
-                               likelihoods = HashMap.fromList [], n = 0}}),
+                     ClassData{prior = -1.3862943611198906,
+                               unseen = -1.9459101490553135,
+                               likelihoods =
+                                 HashMap.fromList
+                                   [("day", -1.0986122886681098),
+                                    ("week-end", -1.0986122886681098)],
+                               n = 1}}),
        ("last <cycle>",
         Classifier{okData =
                      ClassData{prior = 0.0, unseen = -2.70805020110221,
@@ -1659,11 +1663,11 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("week-end",
         Classifier{okData =
-                     ClassData{prior = 0.0, unseen = -1.3862943611198906,
-                               likelihoods = HashMap.fromList [("", 0.0)], n = 2},
-                   koData =
                      ClassData{prior = -infinity, unseen = -0.6931471805599453,
-                               likelihoods = HashMap.fromList [], n = 0}}),
+                               likelihoods = HashMap.fromList [], n = 0},
+                   koData =
+                     ClassData{prior = 0.0, unseen = -1.3862943611198906,
+                               likelihoods = HashMap.fromList [("", 0.0)], n = 2}}),
        ("Oudjaar",
         Classifier{okData =
                      ClassData{prior = 0.0, unseen = -1.3862943611198906,
@@ -1744,17 +1748,21 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("this <time>",
         Classifier{okData =
-                     ClassData{prior = 0.0, unseen = -2.4849066497880004,
+                     ClassData{prior = -0.40546510810816444,
+                               unseen = -2.1972245773362196,
                                likelihoods =
                                  HashMap.fromList
-                                   [("day", -1.2992829841302609), ("hour", -1.7047480922384253),
-                                    ("winter", -1.7047480922384253),
-                                    ("week-end", -1.7047480922384253),
-                                    ("summer", -1.7047480922384253)],
-                               n = 3},
+                                   [("day", -0.9808292530117262), ("winter", -1.3862943611198906),
+                                    ("summer", -1.3862943611198906)],
+                               n = 2},
                    koData =
-                     ClassData{prior = -infinity, unseen = -1.791759469228055,
-                               likelihoods = HashMap.fromList [], n = 0}}),
+                     ClassData{prior = -1.0986122886681098,
+                               unseen = -1.9459101490553135,
+                               likelihoods =
+                                 HashMap.fromList
+                                   [("day", -1.0986122886681098),
+                                    ("week-end", -1.0986122886681098)],
+                               n = 1}}),
        ("within <duration>",
         Classifier{okData =
                      ClassData{prior = 0.0, unseen = -1.6094379124341003,

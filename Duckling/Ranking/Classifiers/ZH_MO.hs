@@ -902,11 +902,11 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("week-end",
         Classifier{okData =
-                     ClassData{prior = 0.0, unseen = -1.3862943611198906,
-                               likelihoods = HashMap.fromList [("", 0.0)], n = 2},
-                   koData =
                      ClassData{prior = -infinity, unseen = -0.6931471805599453,
-                               likelihoods = HashMap.fromList [], n = 0}}),
+                               likelihoods = HashMap.fromList [], n = 0},
+                   koData =
+                     ClassData{prior = 0.0, unseen = -1.3862943611198906,
+                               likelihoods = HashMap.fromList [("", 0.0)], n = 2}}),
        ("day (grain)",
         Classifier{okData =
                      ClassData{prior = -6.453852113757118e-2,
@@ -931,18 +931,19 @@ classifiers
                                likelihoods = HashMap.fromList [], n = 0}}),
        ("this <time>",
         Classifier{okData =
-                     ClassData{prior = -0.2076393647782445, unseen = -4.0943445622221,
+                     ClassData{prior = -0.2876820724517809, unseen = -4.02535169073515,
                                likelihoods =
                                  HashMap.fromList
-                                   [("Wednesday", -1.9980959022258835),
-                                    ("Monday", -1.9980959022258835), ("day", -0.8586616190375187),
-                                    ("hour", -2.9789251552376097), ("Tuesday", -1.6796421711073488),
-                                    ("week-end", -2.9789251552376097)],
-                               n = 26},
+                                   [("Wednesday", -1.927891643552635),
+                                    ("Monday", -1.927891643552635), ("day", -0.7884573603642702),
+                                    ("Tuesday", -1.6094379124341003)],
+                               n = 24},
                    koData =
-                     ClassData{prior = -1.6739764335716716, unseen = -2.995732273553991,
+                     ClassData{prior = -1.3862943611198906,
+                               unseen = -3.1780538303479458,
                                likelihoods =
                                  HashMap.fromList
-                                   [("<integer> (latent time-of-day)", -0.9985288301111273),
-                                    ("hour", -0.9985288301111273)],
-                               n = 6}})]
+                                   [("<integer> (latent time-of-day)", -1.1895840668738362),
+                                    ("day", -2.03688192726104), ("hour", -1.1895840668738362),
+                                    ("week-end", -2.03688192726104)],
+                               n = 8}})]
