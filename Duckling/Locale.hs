@@ -52,12 +52,14 @@ data Lang
   | HR
   | HU
   | ID
+  | IS
   | IT
   | JA
   | KA
   | KM
   | KO
   | LO
+  | ML
   | MY
   | NB
   | NE
